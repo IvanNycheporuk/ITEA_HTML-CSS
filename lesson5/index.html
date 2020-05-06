@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .menu {
+            width: 600px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .submenu {
+            display: none;
+            flex-direction: column;
+        }
+        
+        .has_sub:hover .submenu{
+            display: flex;
+        
+        }
+
+        ul.submenu li {
+            display: block;
+        }
+
+        .has_sub {
+            position: relative;
+        }
+
+        .submenu {
+            position: absolute;
+            padding: 0px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <ul class="menu">
+        <li>Text1</li>
+        <li>Text2</li>
+        <li>Text3</li>
+        <li class="has_sub">
+            <span>Text4</span>
+            <ul class="submenu">
+                <li>Submenu</li>
+                <li>Submenu</li>
+                <li>Submenu</li>
+                <li>Submenu</li>
+            </ul>
+        </li>
+        <li>Text5</li>
+        <li>Text6</li>
+        <li>Text7</li>
+        <li>Text8</li>
+    </ul>
+</body>
+</html>
