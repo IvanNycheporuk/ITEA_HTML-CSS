@@ -1,0 +1,22 @@
+body {
+
+}
+.top-bg {
+    background-image: url(../img/bg.jpg);
+
+}
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.header  li {
+    display: inline-block;
+    
+
+}

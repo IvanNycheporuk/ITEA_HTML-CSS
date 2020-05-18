@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block {
+            width: 600px;
+            height: 600px;
+            border: 1px solid red;
+            background: yellow;
+            margin: 130px auto;
+        }
+
+        body {
+            background: green;
+        }
+
+        .wrapper {
+            width: 100%;
+            max-width: 900px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .some-block {
+            width: 200px;
+            height: 200px;
+            border: 1px solid green;
+            margin: 10px;
+            background: white;
+        }
+
+        @media (max-width: 960px) {
+            .block {
+                background: purple;
+
+            }
+        }
+
+        @media (max-width: 840px) {
+            .block {
+                background: yellow;
+                width: 600px;
+                height: 600px;
+            }
+
+
+        }
+
+        @media (max-width: 480px) {
+
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <div class="block"></div> -->
+
+    <div class="wrapper">
+        <div class="some-block"></div>
+        <div class="some-block"></div>
+        <div class="some-block"></div>
+        <div class="some-block"></div>
+    </div>
+</body>
+</html>
