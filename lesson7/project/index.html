@@ -6,8 +6,8 @@
     <title>Document</title>
     <style>
         .block {
-            width: 600px;
-            height: 600px;
+            width: 400px;
+            height: 400px;
             border: 1px solid red;
             background: yellow;
             margin: 130px auto;
@@ -33,26 +33,25 @@
             background: white;
         }
 
-        @media (max-width: 960px) {
+        /* @media (max-width: 960px) {
             .block {
                 background: purple;
-
             }
         }
 
         @media (max-width: 840px) {
             .block {
-                background: yellow;
-                width: 600px;
-                height: 600px;
+                background: sandybrown;
             }
-
-
         }
 
-        @media (max-width: 480px) {
+        @media (max-width: 500px) {
+            .block {
+                background: skyblue;
+            }
+        } */
 
-        }
+
 
     </style>
 </head>
@@ -65,5 +64,35 @@
         <div class="some-block"></div>
         <div class="some-block"></div>
     </div>
+
+
+    <!-- 
+        // first task
+        960px. w: 350px h: 350px border: black
+        840px  w: 300px h: 300px border: pink border-radius: 50px;
+        500px  w: 150 h: 150 b: purple
+
+        // second task
+
+     -->
+
+     <ul class="test-menu">
+         <li>test</li>
+         <li>test</li>
+         <li>test</li>
+         <li>test</li>
+     </ul>
+
+     <!-- 
+
+        .test-menu {
+            display: flex;
+            list-style-type: none;
+            justify-content: space-evenly;
+        }
+
+        //  при расширении экрана 480px сделаь меню вертикальным
+
+      -->
 </body>
 </html>
