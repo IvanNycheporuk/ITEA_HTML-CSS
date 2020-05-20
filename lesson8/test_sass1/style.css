@@ -1,0 +1,55 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -ms-flex-pack: space-between;
+}
+
+h1 {
+  font-size: 19px;
+}
+
+.header .logo {
+  color: green;
+}
+
+.header .special {
+  background: red;
+  background: #1e5799;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#1e5799), color-stop(50%, #2989d8), color-stop(51%, #207cca), to(#7db9e8));
+  background: linear-gradient(to bottom, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 );
+  /* IE6-9 */
+}
+
+.block, .block-with-padding {
+  width: 100px;
+  background: red;
+  height: 100px;
+}
+
+.block:hover, .block-with-padding:hover {
+  background: blue;
+}
+
+.block.green, .green.block-with-padding {
+  background: green;
+}
+
+.block-with-padding {
+  background: yellow;
+  padding: 100px;
+}
+
+.footer {
+  background: red;
+}
+/*# sourceMappingURL=style.css.map */

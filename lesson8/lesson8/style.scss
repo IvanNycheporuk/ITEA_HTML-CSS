@@ -1,0 +1,45 @@
+$red-color: red;
+$uppercase-transform: uppercase;
+
+@import "box-shadow";
+@import "media";
+
+
+
+h1 {
+    color: $red-color;
+    text-transform: $uppercase-transform;
+}
+
+// .main p {
+//     color: green;
+// }
+
+// .main a {
+//     color: blue;
+// }
+
+.main {
+    @include box-shadow(4px, 2px, 3px, grey);
+
+    a {
+        color: blue;
+    }
+
+    p {
+        color: green;
+    }
+}
+
+.normal-text {
+    color: yellow;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.bold-text {
+    @extend .normal-text;
+    font-size: 40px;
+
+    font-weight: bold;
+}
