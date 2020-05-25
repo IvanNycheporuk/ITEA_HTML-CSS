@@ -1,0 +1,23 @@
+<!--
+ Тег td не допускает пустого содержимого.
+Для того, чтобы ячейки отображались корректно, необходимо их чем-то заполнить. 
+Классическим подходом является вставка пробельного символа &nbsp (no-breaking space).
+-->
+
+<html>
+<head>
+    <title>No breaking space</title>
+</head>
+<body style="font-family: 'Segoe UI';">
+    <table border="1">
+        <tr>
+            <td>&nbsp</td>
+            <td>text</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>text</td>
+        </tr>
+    </table>
+</body>
+</html>

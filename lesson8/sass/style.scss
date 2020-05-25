@@ -1,8 +1,40 @@
-@import "border-radius";
+@import './border_radius_one_param';
+
+$text-color: red;
+
+.blog-post, h2 {
+    color:  $text-color;
+}
+
+.blog-post {
+    h1 {
+        color: firebrick;
+        font-size: 20px;
+    }
+
+    p {
+        color: violet;
+        font-size: 14px;
+    }
+}
 
 #awesome {
-    @include border-radius(15px);
     width: 100px;
     height: 100px;
-    background: red;
+    background-color: red;
+
+    @include border-radius(15px);
+}
+
+.info {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: fantasy;
+}
+
+.info-important {
+    @extend .info;
+
+    color: magenta;
 }

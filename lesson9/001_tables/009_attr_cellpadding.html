@@ -1,0 +1,57 @@
+<!--
+Атрибут cellpadding отвечает за отступы внутри ячеек таблицы.
+-->
+
+<html>
+<head>
+    <title>Using cellpadding</title>
+    <style>
+        .test td:first-child{
+            padding: 30px;
+        }
+        .test-row td{
+            padding: 0!important;
+        }
+
+
+    </style>
+</head>
+
+<body style="font-family: 'Segoe UI'">
+    <h4>cellpadding = 0</h4>
+    <table border="1" cellpadding="0">
+        <tr>
+            <td>First</td>
+            <td>Row</td>
+        </tr>
+        <tr>
+            <td>Second</td>
+            <td>Row</td>
+        </tr>
+    </table>
+
+    <h4>cellpadding = 10:</h4>
+    <table border="1" cellpadding="10">
+        <tr>
+            <td>First</td>
+            <td>Row</td>
+        </tr>
+        <tr>
+            <td>Second</td>
+            <td>Row</td>
+        </tr>
+    </table>
+
+    <h4>style="padding: 30px"</h4>
+    <table class="test" border="1" cellpadding="30">
+        <tr class="test-row">
+            <td>text</td>
+            <td>none</td>
+        </tr>
+        <tr>
+            <td>none</td>
+            <td>80px</td>
+        </tr>
+    </table>
+</body>
+</html>

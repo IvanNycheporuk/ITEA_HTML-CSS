@@ -1,7 +1,32 @@
+.blog-post, h2 {
+  color: red;
+}
+
+.blog-post h1 {
+  color: firebrick;
+  font-size: 20px;
+}
+
+.blog-post p {
+  color: violet;
+  font-size: 14px;
+}
+
 #awesome {
-  border-radius: 15px;
   width: 100px;
   height: 100px;
-  background: red;
+  background-color: red;
+  border-radius: 15px;
+}
+
+.info, .info-important {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: fantasy;
+}
+
+.info-important {
+  color: magenta;
 }
 /*# sourceMappingURL=style.css.map */
